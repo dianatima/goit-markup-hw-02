@@ -14,7 +14,7 @@
 
 body {
     font-family: var(--primary-font);
-    color: var(--navy-color);
+    color: var(--slate-color);
     background-color: var(--primary-white-color);
     font-size: 16px;
     line-height: 1.5;
@@ -29,23 +29,38 @@ a {
     color: var(--navy-color);
 }
 
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
 .logo {
     font-family: var(--logo-font);
     text-transform: uppercase;
-
+    color: var(--primary-accent-color);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
     letter-spacing: 0.54px;
 }
 
-.accent-logo {
-    color: var(--primary-accent-color);
+.header-logo {
+    color: var(--navy-color);
+}
+
+.footer-logo {
+    color: var(--cloud-color);
 }
 
 .nav-link {
     font-weight: 500;
-    letter-spacing: 0.32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-color);
 }
 
 .nav-link:hover,
@@ -53,14 +68,18 @@ a {
     color: var(--secondary-accent-color);
 }
 
-.header-address a:hover,
-.header-address a:focus {
-    color: var(--secondary-accent-color);
+.header-address {
+    font-style: normal;
 }
 
-.header-address a {
+.address-link {
     color: var(--slate-color);
-    font-style: normal;
+    letter-spacing: 0.02em;
+}
+
+.aaddress-link:hover,
+.address-link:focus {
+    color: var(--secondary-accent-color);
 }
 
 .hero-section {
@@ -73,12 +92,17 @@ a {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    text-align: center;
 }
 
 .hero-button {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     color: var(--primary-white-color);
     background-color: var(--primary-accent-color);
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
     cursor: pointer;
 }
 
@@ -87,46 +111,47 @@ a {
     background-color: var(--secondary-accent-color);
 }
 
-.benefits-section-name {
+.benefits-section-name,
+.team-section-employee,
+.portfolio-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
+    color: var(--navy-color);
 }
 
-.benefits-section-text {
+.benefits-section-text,
+.team-section-job,
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
     color: var(--slate-color);
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
+}
+
+.team-section {
+    background-color: var(--cloud-color);
 }
 
 .doing-section-title,
 .team-section-title {
+    color: var(--navy-color);
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    text-align: center;
 }
 
-.team-section-employee {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
-}
-
-.team-section-job {
-    color: var(--slate-color);
-    letter-spacing: 0.32px;
+.team-section-item {
+    background-color: var(--primary-white-color);
 }
 
 .footer {
     background-color: var(--navy-color);
-}
-
-.footer-logo {
-    color: var(--cloud-color);
 }
 
 .footer-text {
@@ -136,16 +161,19 @@ a {
 
 /* PORTFOLIO */
 
-
-.menu-buttons button {
+.portfolio-section-button {
+    font-family: var(--primary-font);
     color: var(--primary-accent-color);
     background-color: var(--cloud-color);
-    letter-spacing: 0.64px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     cursor: pointer;
 }
 
-.menu-buttons button:hover,
-.menu-buttons button:focus {
+.portfolio-section-button:hover,
+.portfolio-section-button:focus {
     color: var(--primary-white-color);
     background-color: var(--secondary-accent-color);
 }
