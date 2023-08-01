@@ -96,7 +96,6 @@ a {
 
 .benefits-section-text {
     color: var(--slate-color);
-    font-weight: 400;
     letter-spacing: 0.32px;
 }
 
@@ -132,7 +131,6 @@ a {
 
 .footer-text {
     color: var(--cloud-color);
-    font-weight: 400;
     letter-spacing: 0.32px;
 }
 
